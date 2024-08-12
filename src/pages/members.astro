@@ -1,17 +1,17 @@
 ---
 import { readAll } from "../lib/markdoc/read";
-import { project } from "../lib/markdoc/frontmatter.schema";
+import { member } from "../lib/markdoc/frontmatter.schema";
 import PageLayout from "../layouts/PageLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
 import { SITE_TITLE } from "../config";
 import Renderer from "src/components/Renderer.astro";
 
-const projects = await readAll({
+const members = await readAll({
   directory: "members",
-  frontmatterSchema: project,
+  frontmatterSchema: member,
 });
 
-const sortedProjects = projects
+const sortedMembers = members
   .filter((p) => p.frontmatter.draft !== true)
   .sort(
     (a, b) =>
@@ -25,9 +25,9 @@ const sortedProjects = projects
   <section slot="main">
     <ul>
       {
-        sortedProjects.map((project) => {
+        sortedMembers.map((member) => {
           const formattedDate = new Date(
-            project.frontmatter.date
+            member.frontmatter.date
           ).toLocaleDateString("en-us", {
             year: "numeric",
             month: "short",
@@ -37,11 +37,11 @@ const sortedProjects = projects
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
               <div class="title">
                 <a
-                  href={project.frontmatter.url}
+                  href={member.frontmatter.url}
                   target="_blank"
                   class="unset hover:text-text-link"
                 >
-                  <span>{project.frontmatter.title}</span>
+                  <span>{member.frontmatter.title}, {member.frontmatter.institution}</span>
                   <span>
                     <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
                   </span>
@@ -49,13 +49,13 @@ const sortedProjects = projects
               </div>
               <br />
               <div>
-                <Renderer content={project.content} slot="content" />
+                <Renderer content={member.content} slot="content" />
               </div>
-              <div class="text-text-muted text-sm italic pt-1">
-                <time datetime={project.frontmatter.date.toISOString()}>
+              {/* <div class="text-text-muted text-sm italic pt-1">
+                <time datetime={member.frontmatter.date.toISOString()}>
                   {formattedDate}
                 </time>
-              </div>
+              </div> */}
             </li>
           );
         })
