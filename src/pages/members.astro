@@ -45,15 +45,14 @@ const sortedMembers = members
                   </span>
                 </a>
               </div>
-              <br />
+              <div class="text-text-muted text-sm italic pt-1">
+                {/* <time datetime={member.frontmatter.date.toISOString()}>
+                  {formattedDate}
+                </time> */}
+              </div>
               <div>
                 <Renderer content={member.content} slot="content" />
               </div>
-              {/* <div class="text-text-muted text-sm italic pt-1">
-                <time datetime={member.frontmatter.date.toISOString()}>
-                  {formattedDate}
-                </time>
-              </div> */}
             </li>
           );
         })

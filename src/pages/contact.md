@@ -8,6 +8,6 @@ import PageLayout from "../layouts/PageLayout.astro";
 <PageLayout>
 
 # Contact us
-Use the links below dd
+Use the links below
 
 </PageLayout>
