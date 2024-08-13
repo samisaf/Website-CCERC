@@ -3,7 +3,7 @@ draft: false
 title: Sami Safadi, MD
 description: First Member.
 institution: University of Minnesota
-date: 2024-08-02
+date: 2024-08-10
 url: https://med.umn.edu/bio/sami-safadi
 ---
 
