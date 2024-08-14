@@ -36,41 +36,42 @@ const title = "Mission Statement and Goals"
     </li>
   </ul>
 </div>
+
 <!-- 
-<body>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 
-  <div id="map" ></div>
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-      // Initialize the map and set its view to a specific location and zoom level
-      var map = L.map('map').setView([37.8, -96.9], 4);
 
-      // Add a tile layer to the map
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
+<div id="map" ></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
 
-      var institutions = [
-          {institution: "Akron Children's Hospital", coords: [41.078202, -81.525913], irb: true},
-          {institution: "George Washington University Hospital", coords: [38.9007, -77.0503], irb: true},
-          {institution: "Georgetown University Hospital", coords: [38.9126, -77.0753], irb: true},
-          {institution: "Washington Hospital Center (MWHC)", coords: [38.9296, -77.0146], irb: true},
-          {institution: "National Institutes of Health (NIH)", coords: [39.0006, -77.1037], irb: true},
-          {institution: "Penn State Health Milton S. Hershey Medical Center", coords: [40.2546, -76.6812], irb: true},
-          {institution: "University of Pittsburgh Medical Center (UPMC)", coords: [40.4420, -79.9605], irb: true},
-          {institution: "University of Maryland Medical Center", coords: [39.2876, -76.6238], irb: true},
-          {institution: "Walter Reed National Military Medical Center", coords: [38.9990, -77.0883], irb: true},
-          {institution: "UVA Health Medical Center", coords: [38.0307, -78.4974], irb: true},
-          {institution: "Emory University Hospital", coords: [33.7925, -84.3210], irb: true},
-          {institution: "University of Minnesota", coords: [44.9730, -93.2277], irb: true},
-          {institution: "University of Southern California", coords: [34.0224, -118.2851], irb: true},
-          {institution: "Yale New Haven Hospital", coords: [41.3043, -72.9356], irb: true},
-          {institution: "Johns Hopkins University", coords: [39.3299, -76.6205], irb: false},
-          {institution: "University of Michigan", coords: [42.2780, -83.7382], irb: false}
-      ];
+<script defer>
+    // Initialize the map and set its view to a specific location and zoom level
+    var map = L.map('map').setView([37.8, -96.9], 4);
 
-      
-      institutions.forEach(i => i.irb? marker = L.marker(i.coords).addTo(map).bindPopup(i.institution): false)    
- </script>
-</body> -->
+    // Add a tile layer to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var institutions = [
+        {institution: "Akron Children's Hospital", coords: [41.078202, -81.525913], irb: true},
+        {institution: "George Washington University Hospital", coords: [38.9007, -77.0503], irb: true},
+        {institution: "Georgetown University Hospital", coords: [38.9126, -77.0753], irb: true},
+        {institution: "Washington Hospital Center (MWHC)", coords: [38.9296, -77.0146], irb: true},
+        {institution: "National Institutes of Health (NIH)", coords: [39.0006, -77.1037], irb: true},
+        {institution: "Penn State Health Milton S. Hershey Medical Center", coords: [40.2546, -76.6812], irb: true},
+        {institution: "University of Pittsburgh Medical Center (UPMC)", coords: [40.4420, -79.9605], irb: true},
+        {institution: "University of Maryland Medical Center", coords: [39.2876, -76.6238], irb: true},
+        {institution: "Walter Reed National Military Medical Center", coords: [38.9990, -77.0883], irb: true},
+        {institution: "UVA Health Medical Center", coords: [38.0307, -78.4974], irb: true},
+        {institution: "Emory University Hospital", coords: [33.7925, -84.3210], irb: true},
+        {institution: "University of Minnesota", coords: [44.9730, -93.2277], irb: true},
+        {institution: "University of Southern California", coords: [34.0224, -118.2851], irb: true},
+        {institution: "Yale New Haven Hospital", coords: [41.3043, -72.9356], irb: true},
+        {institution: "Johns Hopkins University", coords: [39.3299, -76.6205], irb: false},
+        {institution: "University of Michigan", coords: [42.2780, -83.7382], irb: false}
+    ];
+
+    
+    institutions.forEach(i => i.irb? marker = L.marker(i.coords).addTo(map).bindPopup(i.institution): false)    
+</script> -->
