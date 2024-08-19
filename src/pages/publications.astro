@@ -18,12 +18,14 @@ import { SITE_TITLE } from "../config";
 //       new Date(b.frontmatter.date).valueOf() -
 //       new Date(a.frontmatter.date).valueOf()
 //   );
+const subtitle = "Notable Publications"
+
 ---
 
 <PageLayout>
   <PageMeta title={`Publications | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    Notable Publications
+    <p class="text-xl pb-4">{subtitle}</p>
 
     <!-- <ul>
       {

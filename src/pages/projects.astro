@@ -18,11 +18,14 @@ const sortedProjects = projects
       new Date(b.frontmatter.date).valueOf() -
       new Date(a.frontmatter.date).valueOf()
   );
+
+const subtitle = "Notable Projects"
 ---
 
 <PageLayout>
   <PageMeta title={`Projects | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
+    <p class="text-xl pb-4">{subtitle}</p>
     <ul>
       {
         sortedProjects.map((project) => {
@@ -35,6 +38,7 @@ const sortedProjects = projects
           });
           return (
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
+              <b>
               <div class="title">
                 <a
                   href={project.frontmatter.url}
@@ -47,6 +51,7 @@ const sortedProjects = projects
                   </span>
                 </a>
               </div>
+            </b>
               <div class="text-text-muted text-sm italic pt-1">
                 {/* <time datetime={project.frontmatter.date.toISOString()}>
                   {formattedDate}
