@@ -1,4 +1,12 @@
-# Blogster
+# Critical Care Education & Research Consortium (CCERC) Website
+
+This project generate the CCERC website accessible at [ccerc.netlify.app](https://ccerc.netlify.app/) or [cc-erc.org](https://cc-erc.org/). 
+
+CCERC is a national network of academic physicians collaborating on multi-center educational research projects in critical care medicine.
+
+The mission of CCERC is to improve the care of critically ill patients by conducting high-quality research related to the education and training of critical care providers that impacts patient care. Our consortium is committed to advancing the field through education and research.
+
+# Blogster Template Instructions
 
 Theme: **sleek**
 
@@ -38,13 +46,3 @@ Easy.
 ## How do I deploy?
 
 `yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
-
-## Credit
-
-Thanks to other templates that inspired this theme.
-
-- [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
-
-## License
-
-MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
