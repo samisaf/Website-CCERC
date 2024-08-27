@@ -50,3 +50,7 @@ export const member = baseSchema.extend({
   url: z.string(),
   institution: z.string(),
 });
+
+export const publication = baseSchema.extend({
+  url: z.string(),
+});
