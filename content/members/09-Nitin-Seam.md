@@ -9,9 +9,7 @@ url: https://clinicalcenter.nih.gov/meet-our-doctors/nseam.html/
 
 Dr. Seam is is the Associate Chief, Senior Research Physician and Fellowship Director of the NIH
 Critical Care Medicine Department as well as a Clinical Professor of Medicine at George
-Washington University Medical Center and the Uniformed Services University.
-\
-\
+Washington University Medical Center and the Uniformed Services University. 
 Dr. Seam's areas of academic expertise and publication include mechanical ventilation, ARDS
 and innovation in health professions education, including e-learning, artificial intelligence and
 simulation. He is Editor in Chief of ATS Scholar, a health professions education journal published
