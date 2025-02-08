@@ -2,7 +2,7 @@
 draft: false
 title: Jonathan Kalehoff, MD
 description: 
-institution: University of Alabama at Birmingham (UAB)
+institution: University of Alabama at Birmingham
 date: 2024-08-29
 url: https://scholars.uab.edu/7001-jonathan-kalehoff
 ---
