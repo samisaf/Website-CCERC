@@ -1,0 +1,65 @@
+---
+import PageMeta from "../components/PageMeta.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE_TITLE } from "../config";
+
+---
+
+<PageLayout>
+  <PageMeta title={`${SITE_TITLE}`} slot="meta" />
+  <Fragment slot="main">
+
+    <p class="mb-4">If you're interested in joining our consortium, please review this page for an overview of the process. Once you've read through the information and decide to move forward, you can email <a href="mailto:burton.w.lee@gmail.com?subject=Joining%20CCERC">Dr. Burton Lee</a>.
+    </p>
+
+    <h1 class="font-extrabold text-3xl md:text-4xl tracking-tight pt-4 pb-2 overflow-hidden">
+      <span class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent">
+      Arrange for an Initial Meeting
+      </span>
+    </h1>
+
+  <p class="mt-5 mb-5">
+    Schedule a briefing with Dr. Burton Lee approximately 18 months before the intended course date. During that call Dr. Lee will outline the enrollment process and typical resource needs.
+  </p>
+
+  <h1 class="font-extrabold text-3xl md:text-4xl tracking-tight pt-4 pb-2 overflow-hidden">
+    <span class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent">
+      Secure Institutional Support
+    </span>
+  </h1>
+
+  <p class="mt-5 mb-5">
+    Obtain approval from your division chief and fellowship program director. This is essential as the program depends on protected time for both fellows and teaching faculty.
+  </p>
+
+  <h1 class="font-extrabold text-3xl md:text-4xl tracking-tight pt-4 pb-2 overflow-hidden">
+    <span class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent">
+      Obtain IRB Approval or Exemption
+    </span>
+  </h1>
+
+  <p class="mt-5 mb-5">
+    Our consortium engages in educational research and we ask all sites to participate. Therefore, obtaining IRB exemption or approval is necessary before the course starts.
+  </p>
+
+  <h1 class="font-extrabold text-3xl md:text-4xl tracking-tight pt-4 pb-2 overflow-hidden">
+    <span class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent">
+      Secure Resources for the Mechanical Ventilation Course
+    </span>
+  </h1>
+
+  <p class="mt-5 mb-5">
+    All participating sites must offer the course, which requires space and mechanical ventilation simulation equipment. A large lecture space with a projector and a large whiteboard is needed. Several small-group breakout spaces are also required. Additionally, budget should be allocated to host three external faculty members during the first year of the program.
+  </p>
+
+  <h1 class="font-extrabold text-3xl md:text-4xl tracking-tight pt-4 pb-2 overflow-hidden">
+    <span class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent">
+      Prepare and Certify Local Faculty
+    </span>
+  </h1>
+
+  <p class="mt-5 mb-5">
+    We require at least three local faculty physicians to achieve "fluent" status in the preceptorial track for the course's success. This certification starts with a two-day CME course. Afterwards, precepting physicians must complete a year-long mentored preceptorship.
+  </p>
+  </Fragment>
+</PageLayout>
