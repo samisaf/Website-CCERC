@@ -9,7 +9,7 @@ const title = "Interested in Joining our Consortium?";
 <PageLayout>
   <PageMeta title={`Join Us | ${SITE_TITLE}`} slot="meta" />
   <section>
-    <p class="text-xl pb-4">{title}</p>
+    <h2>{title}</h2>
     <Fragment set:html={markdown.compiledContent()} />
   </section>
 </PageLayout>

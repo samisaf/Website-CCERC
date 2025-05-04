@@ -18,13 +18,13 @@ const sortedPosts = posts
       new Date(a.frontmatter.date).valueOf()
   );
 
-const subtitle = "Notable Blog Posts"
+const title = "Notable Blog Posts"
 ---
 
 <PageLayout>
   <PageMeta title={`Blog | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
-    <p class="text-xl pb-4">{subtitle}</p>
+    <h2>{title}</h2>
 
     <ul>
       {

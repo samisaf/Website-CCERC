@@ -19,13 +19,13 @@ const sortedProjects = projects
       new Date(a.frontmatter.date).valueOf()
   );
 
-const subtitle = "Notable Projects"
+const title = "Notable Projects"
 ---
 
 <PageLayout>
   <PageMeta title={`Projects | ${SITE_TITLE}`} slot="meta" />
   <section>
-    <h2 >{subtitle}</h2>
+    <h2 >{title}</h2>
     <ul>
       {
         sortedProjects.map((project) => {
