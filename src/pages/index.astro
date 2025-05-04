@@ -3,7 +3,8 @@ import PageMeta from "../components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
 import AboutUs from "../components/AboutUs.astro";
-import Map from "../components/Map.astro";
+import MapLibre from "./maplibre.astro";
+import MapLeaflet from "./mapleaflet.astro";
 import { SITE_TITLE } from "../config";
 ---
 
@@ -12,6 +13,7 @@ import { SITE_TITLE } from "../config";
   <Fragment slot="main">
     <Intro />
     <AboutUs />
-    <Map />
+    <MapLibre />
+    <!-- <MapLeaflet /> -->
   </Fragment>
 </PageLayout>
