@@ -1,0 +1,15 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import PageMeta from "../components/PageMeta.astro";
+import { SITE_TITLE } from "../config";
+import * as markdown from "../../content/publications.md"
+const title = "Notable Publications";
+---
+
+<PageLayout>
+  <PageMeta title={`Publications | ${SITE_TITLE}`} slot="meta" />
+  <section>
+    <p class="text-xl pb-4">{title}</p>
+    <Fragment set:html={markdown.compiledContent()} />
+  </section>
+</PageLayout>
