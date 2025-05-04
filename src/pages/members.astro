@@ -22,18 +22,11 @@ const subtitle = "Participating Members in Alphabetical Order"
 
 <PageLayout>
   <PageMeta title={`Members | ${SITE_TITLE}`} slot="meta" />
-  <section slot="main">
+  <section>
   <h2>{subtitle}</h2>
     <ul>
       {
         sortedMembers.map((member) => {
-          const formattedDate = new Date(
-            member.frontmatter.date
-          ).toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          });
           return (
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
               <div class="title">
@@ -49,9 +42,6 @@ const subtitle = "Participating Members in Alphabetical Order"
                 </a>
               </div>
               <div class="text-text-muted text-sm italic pt-1">
-                {/* <time datetime={member.frontmatter.date.toISOString()}>
-                  {formattedDate}
-                </time> */}
               </div>
               <div class="ml-0 mb-4">
                 <Renderer content={member.content} slot="content" />

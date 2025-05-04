@@ -1,0 +1,52 @@
+---
+const title = "Participating Institutions"
+---
+
+<div>
+  <h2>{title}</h2>
+
+  <div class="mt-5" id="map" style="width: 100%; height: 50vh;"></div>
+
+  <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet"/>
+  <script is:client="load" src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+  <script is:client="load">
+    const institutions = [
+      {institution: "Akron Children's Hospital", coords: [41.078202, -81.525913], irb: true},
+      {institution: "George Washington University Hospital", coords: [38.9007, -77.0503], irb: true},
+      {institution: "Georgetown University Hospital", coords: [38.9126, -77.0753], irb: true},
+      {institution: "Washington Hospital Center (MWHC)", coords: [38.9296, -77.0146], irb: true},
+      {institution: "National Institutes of Health (NIH)", coords: [39.0006, -77.1037], irb: true},
+      {institution: "Penn State Health Milton S. Hershey Medical Center", coords: [40.2546, -76.6812], irb: true},
+      {institution: "University of Pittsburgh Medical Center (UPMC)", coords: [40.4420, -79.9605], irb: true},
+      {institution: "University of Maryland Medical Center", coords: [39.2876, -76.6238], irb: true},
+      {institution: "Walter Reed National Military Medical Center", coords: [38.9990, -77.0883], irb: true},
+      {institution: "UVA Health Medical Center", coords: [38.0307, -78.4974], irb: true},
+      {institution: "Emory University Hospital", coords: [33.7925, -84.3210], irb: true},
+      {institution: "University of Minnesota", coords: [44.9730, -93.2277], irb: true},
+      {institution: "University of Southern California", coords: [34.0224, -118.2851], irb: true},
+      {institution: "Yale New Haven Hospital", coords: [41.3043, -72.9356], irb: true},
+      {institution: "Johns Hopkins University", coords: [39.3299, -76.6205], irb: false},
+      {institution: "University of Michigan", coords: [42.2780, -83.7382], irb: false}
+    ];
+
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+      center: [-98.5795, 39.8283],
+      zoom: 3
+    });
+
+    map.on('load', () => {
+      institutions.forEach(i => {
+        if (i.irb) {
+          const popup = new maplibregl.Popup({ offset: 25 }).setText(i.institution);
+          new maplibregl.Marker()
+            .setLngLat([i.coords[1], i.coords[0]])
+            .setPopup(popup)
+            .addTo(map);
+        }
+      });
+    });
+  </script>
+
+</div>

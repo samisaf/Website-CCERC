@@ -3,26 +3,21 @@ const title = "Participating Institutions"
 ---
 
 <div>
-  <h1
-  class="font-extrabold text-3xl md:text-4xl tracking-tight pt-4 pb-2 overflow-hidden"
->
-  <span
-    class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent"
-  >
-    {title}
-  </span>
-</h1>
+<h2>{title}</h2>
 
 <div class="mt-5" id="map" style="width: 100%; height: 50vh;"></div>
 
-<link
-  href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
-  rel="stylesheet"
-/>
-<script is:client="load" src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
-
+<script is:client="load" src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script is:client="load">
-    var institutions = [
+    // Initialize the map and set its view to a specific location and zoom level
+    var map = L.map('map').setView([37.8, -96.9], 4);
+
+    // Add a tile layer to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const institutions = [
         {institution: "Akron Children's Hospital", coords: [41.078202, -81.525913], irb: true},
         {institution: "George Washington University Hospital", coords: [38.9007, -77.0503], irb: true},
         {institution: "Georgetown University Hospital", coords: [38.9126, -77.0753], irb: true},
@@ -41,24 +36,9 @@ const title = "Participating Institutions"
         {institution: "University of Michigan", coords: [42.2780, -83.7382], irb: false}
     ];
 
-  const map = new maplibregl.Map({
-    container: 'map',
-    style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
-    center: [-98.5795, 39.8283],
-    zoom: 3
-  });
-
-  map.on('load', () => {
-    institutions.forEach(i => {
-      if (i.irb) {
-        const popup = new maplibregl.Popup({ offset: 25 }).setText(i.institution);
-        new maplibregl.Marker()
-          .setLngLat([i.coords[1], i.coords[0]])
-          .setPopup(popup)
-          .addTo(map);
-      }
-    });
-  });
+    
+    institutions.forEach(i => i.irb? marker = L.marker(i.coords).addTo(map).bindPopup(i.institution): false)    
 </script>
+
 
 </div>

@@ -3,7 +3,6 @@ layout: ../layouts/PageLayout.astro
 ---
 
 ## Interested in Joining our Consortium?
-
 Please review this page for an overview of the process. Once you've read through the information and decide to move forward, you can email [Dr. Burton Lee](mailto:burton.w.lee@gmail.com?subject=Joining%20CCERC).
 
 <br>
