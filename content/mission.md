@@ -9,7 +9,7 @@ to the education and training of critical care providers. We aim for this resear
 <br>
 
 ## Mission Statement and Goals
-- **Advancing Critical Care Education.** Develop and disseminate educational programs and resources to improve training and knowledge in critical care medicine.
-- **Promoting Collaborative Research.** Foster collaborative research initiatives among member institutions to drive innovation and advancement in critical care practice.
-- **Professional Development.** Provide opportunities for continuous professional development and skill enhancement for critical care practitioners.
-- **Building a Collaborative Network.** Strengthen the network of critical care professionals and institutions to share best practices across the consortium.
+- **Advancing Education in Critical Care and Pulmonary Medicine.** Develop and disseminate educational programs and resources to improve training and knowledge in cardiopulmonary physiology and clinical practice.
+- **Promoting Collaborative Research.** Foster collaborative research initiatives among member institutions to drive innovation and advancement in critical care and pulmonary medicine.
+- **Professional Development.** Provide opportunities for continuous professional development and skill enhancement for critical care and pulmonary practitioners.
+- **Building a Collaborative Network.** Strengthen the network of critical care and pulmonary professionals and institutions to share best practices across the consortium.
