@@ -6,7 +6,7 @@
     "dev": "astro dev --port 4000",
     "start": "astro dev",
     "check": "astro check",
-    "build": "astro build",
+    "build": "npm run fetch-pubmed && npm run update-publications && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "clean": "rm -rf dist",
