@@ -16,11 +16,16 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import deduplicate from './remove-duplicates.mjs';
 
 // File Path Configurations
 const PUBMED_RESULTS_FILE = 'public/pubmed-results.json';
 const EXCLUDED_RESULTS_FILE = 'public/excluded-results.json';
 const PUBLICATIONS_FILE = 'content/publications.md';
+
+// remove duplicates before processing
+deduplicate(EXCLUDED_RESULTS_FILE);
+deduplicate(PUBMED_RESULTS_FILE);
 
 /**
  * Formats a single publication object into a Markdown list item.

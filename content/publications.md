@@ -22,8 +22,6 @@ url: some_url
 
 - Halestrap P, Aliba D, Otieno G, Brotherton BJ, Gitura HW, Matson JE, Lee BW, Mbugua E. "Development and delivery of a higher diploma in emergency medicine and critical care for clinical officers in Kenya." Afr J Emerg Med (2023 Dec). https://pubmed.ncbi.nlm.nih.gov/37701728/
 
-- Jain V, Oweis E, Woods CJ. "Mapping the Distance: From Competence to Capability." ATS Sch (2023 Dec). https://pubmed.ncbi.nlm.nih.gov/38196680/
-
 - Krutsinger DC, Adamson R, Olson EM, Denson JL, Kelm DJ, Chu DC, Stewart NH. "Financial Education in U.S. Pulmonary and Critical Care Medicine Fellowship Programs." ATS Sch (2023 Sep). https://pubmed.ncbi.nlm.nih.gov/37795115/
 
 - Seam N, Kriner E, Woods CJ, Shah NG, Acho M, McCurdy MT, Mikita J, Ahari J, Sun J, Bell T, Lee BW. "Impact of Novel Multiinstitutional Curriculum on Critical Care Fellow Ventilator Knowledge." ATS Sch (2020 Dec 22). https://pubmed.ncbi.nlm.nih.gov/33870325/

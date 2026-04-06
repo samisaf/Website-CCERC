@@ -85,14 +85,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/39379159/"
     },
     {
-      "id": "38196680",
-      "title": "Mapping the Distance: From Competence to Capability.",
-      "authors": "Jain V, Oweis E, Woods CJ",
-      "source": "ATS Sch",
-      "pubdate": "2023 Dec",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38196680/"
-    },
-    {
       "id": "33870325",
       "title": "Impact of Novel Multiinstitutional Curriculum on Critical Care Fellow Ventilator Knowledge.",
       "authors": "Seam N, Kriner E, Woods CJ, Shah NG, Acho M, McCurdy MT, Mikita J, Ahari J, Sun J, Bell T, Lee BW",
@@ -125,14 +117,6 @@
       "source": "Am J Respir Cell Mol Biol",
       "pubdate": "2025 Nov",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40305675/"
-    },
-    {
-      "id": "39890296",
-      "title": "Challenges of Managing Pulmonary Disease in the Immunocompromised Host.",
-      "authors": "Cheng GS, Ramirez JA, Staitieh BS, Evans SE",
-      "source": "Clin Chest Med",
-      "pubdate": "2025 Mar",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39890296/"
     },
     {
       "id": "39431510",
@@ -203,6 +187,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/41666252/"
     },
     {
+      "id": "40910509",
+      "title": "Midline Catheters as an Alternative for Central Venous Catheters in Venous Pressure Monitoring: A Single Center Experience.",
+      "authors": "Sweeney B, Kim J, Adnani A, Saleem H, Akben S, Teo YRA, Shaykhinurov E, Wu M, Bheem R, Islam S, Davison D, Hawkins K, King D, Ivanovic S, Yamane DP",
+      "source": "J Intensive Care Med",
+      "pubdate": "2026 Apr",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40910509/"
+    },
+    {
       "id": "40152196",
       "title": "Phenobarbital Addition to Alcohol Withdrawal Treatment Offers Better Outcomes than Dexmedetomidine in Hospitalized Patients.",
       "authors": "Matecki M, Noureldin A, Akkari R, Cohen Z, McMullan M, Hawkins K, Williams J, Nwude A, Yamane D, Sarani B, Lee SM, Kartiko S",
@@ -269,14 +261,6 @@
       "source": "JCI Insight",
       "pubdate": "2024 Feb 8",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38516892/"
-    },
-    {
-      "id": "36620726",
-      "title": "Spontaneous hemothorax in a 48-year-old man with COVID-19 acute respiratory distress syndrome.",
-      "authors": "Chai AL, El-Baba FM, Patel C",
-      "source": "Respir Med Case Rep",
-      "pubdate": "2023",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36620726/"
     },
     {
       "id": "34394885",
@@ -447,6 +431,14 @@
       "source": "JAMA",
       "pubdate": "2025 Nov 11",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41051784/"
+    },
+    {
+      "id": "39841527",
+      "title": "Decay in Physiologic Knowledge since Medical School among Critical Care Fellows (DIP Study).",
+      "authors": "Maximous SI, Acho M, Ahari J, Hawkins K, Jamieson DB, Luks AM, Poston J, Seam N, Shah NG, Sun J, Woods CJ, Lee BW",
+      "source": "ATS Sch",
+      "pubdate": "2025 Jun",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39841527/"
     },
     {
       "id": "39379159",
