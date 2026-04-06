@@ -23,7 +23,8 @@ import { globby } from 'globby';
 const MEMBERS_DIR = 'content/members';
 // Destination for the aggregated PubMed search results
 const OUTPUT_FILE = 'public/pubmed-results.json';
-
+// Maximum number of publications to fetch per author to keep results manageable
+const RETMAX = 5;
 /**
  * Searches PubMed for the most recent articles by a given author.
  * 
@@ -33,8 +34,10 @@ const OUTPUT_FILE = 'public/pubmed-results.json';
 async function fetchPubMedForAuthor(authorName) {
   // PubMed ESearch API to find IDs
   // We limit to 5 results to keep the search focused and reduce API load.
-  const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${encodeURIComponent(authorName)}[Author]&retmode=json&retmax=5`;
-  
+  const term = encodeURIComponent(authorName);
+  const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${term}[Author]&retmode=json&retmax=${RETMAX}`;
+  console.log(searchUrl);
+
   try {
     const searchResponse = await fetch(searchUrl);
     const searchData = await searchResponse.json();
@@ -61,6 +64,7 @@ async function fetchPubMedForAuthor(authorName) {
           pubdate: article.pubdate,
           url: `https://pubmed.ncbi.nlm.nih.gov/${id}/`
         });
+        console.log(`Fetched article ${id}: ${article.title}`);
       } else {
         console.warn(`No summary found for ID: ${id}`);
       }
