@@ -51,14 +51,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/39841527/"
     },
     {
-      "id": "39479530",
-      "title": "Impact of Longitudinal Mechanical Ventilation Curriculum on Decay of Knowledge.",
-      "authors": "Keller M, Acho M, Sun J, Kriner E, Seam N, Lee BW",
-      "source": "ATS Sch",
-      "pubdate": "2024 Jun 1",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39479530/"
-    },
-    {
       "id": "39379159",
       "title": "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation.",
       "authors": "Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium",
@@ -91,6 +83,14 @@
       "source": "Respir Care",
       "pubdate": "2024 Oct 25",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39379159/"
+    },
+    {
+      "id": "38196680",
+      "title": "Mapping the Distance: From Competence to Capability.",
+      "authors": "Jain V, Oweis E, Woods CJ",
+      "source": "ATS Sch",
+      "pubdate": "2023 Dec",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38196680/"
     },
     {
       "id": "33870325",
@@ -313,14 +313,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/40684906/"
     },
     {
-      "id": "40679874",
-      "title": "Strengthening Continuing Professional Development through Active Collaboration.",
-      "authors": "Seam N, Green J, Price DW",
-      "source": "ATS Sch",
-      "pubdate": "2025 Dec",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40679874/"
-    },
-    {
       "id": "40586527",
       "title": "Reflections from the First 5 Years of ATS Scholar.",
       "authors": "Seam N, Burkart KM, Kritek PA",
@@ -387,14 +379,6 @@
       "source": "Transpl Infect Dis",
       "pubdate": "2026 Mar 2",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41766675/"
-    },
-    {
-      "id": "41561099",
-      "title": "Primary ciliary dyskinesia: a national expert consensus statement on standards of care.",
-      "authors": "Robson EA, Spoletini G, Bercusson A, Carr SB, Carroll M, Dexter K, Dixon L, Hogg C, Jones A, Kenia P, Loebinger M, Lucas JS, Moya E, O'Callaghan C, Patel D, Peckham DG, Range S, Walker WT",
-      "source": "ERJ Open Res",
-      "pubdate": "2026 Jan",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41561099/"
     },
     {
       "id": "41040014",
@@ -465,14 +449,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/41051784/"
     },
     {
-      "id": "39841527",
-      "title": "Decay in Physiologic Knowledge since Medical School among Critical Care Fellows (DIP Study).",
-      "authors": "Maximous SI, Acho M, Ahari J, Hawkins K, Jamieson DB, Luks AM, Poston J, Seam N, Shah NG, Sun J, Woods CJ, Lee BW",
-      "source": "ATS Sch",
-      "pubdate": "2025 Jun",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39841527/"
-    },
-    {
       "id": "39379159",
       "title": "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation.",
       "authors": "Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium",
@@ -505,14 +481,6 @@
       "source": "Respir Care",
       "pubdate": "2025 May",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40178919/"
-    },
-    {
-      "id": "32974635",
-      "title": "Assessing Different Approaches to Leveraging Historical Smoking Exposure Data to Better Select Lung Cancer Screening Candidates: A Retrospective Validation Study.",
-      "authors": "Kats DJ, Adie Y, Tlimat A, Greco PJ, Kaelber DC, Tarabichi Y",
-      "source": "Nicotine Tob Res",
-      "pubdate": "2021 Aug 4",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32974635/"
     },
     {
       "id": "31862438",
@@ -581,14 +549,6 @@
       "source": "BMC Health Serv Res",
       "pubdate": "2026 Feb 21",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41723492/"
-    },
-    {
-      "id": "41644135",
-      "title": "Understanding risk of poor outcomes in adults hospitalised with respiratory syncytial virus infection: evidence from a multicentre UK cohort.",
-      "authors": "Morelli T, Purcell M, Panaguiton J, Patel R, Weinberg S, Hulston G, Siy-Yap H, Davies EA, Keating A, Saidy I, Freeman A, Staples KJ, Rodrigues P, Jones A, Allen A, Bansal AT, Marciniak SJ, Greening NJ, Crooks MG, Mitchelmore P, Siddiqui SH, Myerson J, Pavitt MJ, Daneshvar C, Chalmers JD, Lee PH, Lewis T, Clark TW, Denny S, Wiseman DJ, Ellis H, Wilkinson TM, UNIVERSAL Study Group, Universal Study Group",
-      "source": "Thorax",
-      "pubdate": "2026 Feb 5",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41644135/"
     },
     {
       "id": "41272113",

@@ -1,9 +1,14 @@
 ---
+const today = new Date().toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
-<footer class="text-sm leading-[1.75] mt-4">
+<footer class="text-sm leading-[1.75] mt-4 flex-col">
   <div>
-    &copy; {new Date().getFullYear()} CCERC. All rights reserved.
+    &copy; {new Date().getFullYear()} CCERC. All rights reserved. Last updated on {today}.
   </div>
 </footer>
 

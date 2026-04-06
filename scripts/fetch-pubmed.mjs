@@ -22,7 +22,7 @@ import { globby } from 'globby';
 // Directory containing member profile Markdown files
 const MEMBERS_DIR = 'content/members';
 // Destination for the aggregated PubMed search results
-const OUTPUT_FILE = 'scripts/pubmed-results.json';
+const OUTPUT_FILE = 'public/pubmed-results.json';
 
 /**
  * Searches PubMed for the most recent articles by a given author.

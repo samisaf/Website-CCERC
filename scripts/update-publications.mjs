@@ -3,7 +3,7 @@
  * @description Processes PubMed search results and updates the website's publications page.
  * 
  * This script performs the following steps:
- * 1. Reads raw PubMed search results from `scripts/pubmed-results.json`.
+ * 1. Reads raw PubMed search results from `public/pubmed-results.json`.
  * 2. Loads an exclusion list from `scripts/excluded-results.json` to filter out unwanted articles.
  * 3. Deduplicates publications across all members using PubMed IDs.
  * 4. Sorts the finalized list by publication date (descending by year).
@@ -18,8 +18,8 @@ import path from 'path';
 import matter from 'gray-matter';
 
 // File Path Configurations
-const PUBMED_RESULTS_FILE = 'scripts/pubmed-results.json';
-const EXCLUDED_RESULTS_FILE = 'scripts/excluded-results.json';
+const PUBMED_RESULTS_FILE = 'public/pubmed-results.json';
+const EXCLUDED_RESULTS_FILE = 'public/excluded-results.json';
 const PUBLICATIONS_FILE = 'content/publications.md';
 
 /**
