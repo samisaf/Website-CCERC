@@ -16,13 +16,14 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import { globby } from 'globby';
+import { fileURLToPath } from 'url';
 
 // Directory containing member profile Markdown files
 const MEMBERS_DIR = 'content/members';
 // Destination for the aggregated PubMed search results
 const OUTPUT_FILE = 'public/pubmed-results.json';
 // Maximum number of publications to fetch per author to keep results manageable
-const RETMAX = 5;
+const RETMAX = 20;
 /**
  * Searches PubMed for the most recent articles by a given author.
  * 
@@ -41,7 +42,7 @@ export async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
     const searchResponse = await fetch(searchUrl);
     const searchData = await searchResponse.json();
     const ids = searchData.esearchresult.idlist;
-    
+
     // If no articles are found, return an empty list immediately
     if (ids.length === 0) return [];
 
@@ -51,7 +52,7 @@ export async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
       const summaryUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${id}&retmode=json`;
       const summaryResponse = await fetch(summaryUrl);
       const summaryData = await summaryResponse.json();
-      
+
       const article = summaryData.result?.[id];
       if (article) {
         // Normalize the PubMed response into our internal publication format
@@ -67,7 +68,7 @@ export async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
       } else {
         console.warn(`No summary found for ID: ${id}`);
       }
-      
+
       // Artificial delay (approx 3 requests/sec) to avoid being blocked by NCBI
       await new Promise(resolve => setTimeout(resolve, 340));
     }
@@ -96,19 +97,19 @@ export async function main(membersDir = MEMBERS_DIR, outputFile = OUTPUT_FILE) {
   for (const file of memberFiles) {
     // Skip placeholder or draft files
     if (file.endsWith('draft-member.md')) continue;
-    
+
     // Parse frontmatter from the Markdown file
     const content = fs.readFileSync(file, 'utf-8');
     const { data: frontmatter } = matter(content);
-    
+
     // Clean up the name for searching (e.g., remove "MD" or "PhD" from titles)
     let name = frontmatter.title.split(',')[0].trim();
     console.log(`Searching for: ${name}`);
-    
+
     // Perform the PubMed search
     const articles = await fetchPubMedForAuthor(name);
     allResults[name] = articles;
-    
+
     // Respect NCBI rate limit (3 requests/sec without API key) between authors
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
@@ -118,10 +119,10 @@ export async function main(membersDir = MEMBERS_DIR, outputFile = OUTPUT_FILE) {
   console.log(`Results successfully saved to ${outputFile}`);
 }
 
-// Global execution entry point (only when run directly)
-if (process.argv[1] === import.meta.url) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  console.log('Starting PubMed fetch process...');
   main().catch(err => {
-    console.error('Fatal error during PubMed fetch:', err);
+    console.error('Fatal error during PubMed fetch:', err.stack || err);
     process.exit(1);
   });
 }

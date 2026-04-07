@@ -16,6 +16,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import removeDuplicates from './remove-duplicates.mjs';
+import { fileURLToPath } from 'url';
 
 // File Path Configurations
 const PUBMED_RESULTS_FILE = 'public/pubmed-results.json';
@@ -132,7 +133,8 @@ export async function updatePublications(pubmedResultsFile = PUBMED_RESULTS_FILE
 }
 
 // Global execution (only when run directly)
-if (process.argv[1] === import.meta.url) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  console.log('Starting publication update process...');
   updatePublications().catch(err => {
     console.error('An unexpected error occurred during execution:', err);
     process.exit(1);

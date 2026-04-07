@@ -1,5 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const EXCLUDED_RESULTS_FILE = 'public/excluded-results.json';
 
 /**
  * Reads a JSON file containing an array of publication objects, removes 
@@ -69,4 +72,13 @@ export default function removeDuplicates(filePathName) {
     // Catch and log any unexpected errors (e.g., malformed JSON syntax, file permission issues)
     console.error(`Error processing ${filePath}:`, err.message);
   }
+}
+
+function main() {
+  console.log('Removing duplicates from excluded results...');
+  removeDuplicates(EXCLUDED_RESULTS_FILE);
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main();
 }
