@@ -17,6 +17,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/40178919/"
     },
     {
+      "id": "39379159",
+      "title": "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation.",
+      "authors": "Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium",
+      "source": "Respir Care",
+      "pubdate": "2024 Oct 25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39379159/"
+    },
+    {
       "id": "38837000",
       "title": "The role of biomarkers in early identification of acute kidney injury among non-critically ill patients.",
       "authors": "Safadi S, Hommos MS, Thongprayoon C, Giesen CD, Bernaba M, Kashani KB, Lieske JC",
@@ -51,6 +59,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/39841527/"
     },
     {
+      "id": "39479530",
+      "title": "Impact of Longitudinal Mechanical Ventilation Curriculum on Decay of Knowledge.",
+      "authors": "Keller M, Acho M, Sun J, Kriner E, Seam N, Lee BW",
+      "source": "ATS Sch",
+      "pubdate": "2024 Jun 1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39479530/"
+    },
+    {
       "id": "39379159",
       "title": "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation.",
       "authors": "Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium",
@@ -83,6 +99,14 @@
       "source": "Respir Care",
       "pubdate": "2024 Oct 25",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39379159/"
+    },
+    {
+      "id": "38196680",
+      "title": "Mapping the Distance: From Competence to Capability.",
+      "authors": "Jain V, Oweis E, Woods CJ",
+      "source": "ATS Sch",
+      "pubdate": "2023 Dec",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38196680/"
     },
     {
       "id": "33870325",
@@ -185,14 +209,6 @@
       "source": "J Intensive Care Med",
       "pubdate": "2026 Feb 10",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41666252/"
-    },
-    {
-      "id": "40910509",
-      "title": "Midline Catheters as an Alternative for Central Venous Catheters in Venous Pressure Monitoring: A Single Center Experience.",
-      "authors": "Sweeney B, Kim J, Adnani A, Saleem H, Akben S, Teo YRA, Shaykhinurov E, Wu M, Bheem R, Islam S, Davison D, Hawkins K, King D, Ivanovic S, Yamane DP",
-      "source": "J Intensive Care Med",
-      "pubdate": "2026 Apr",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40910509/"
     },
     {
       "id": "40152196",
@@ -399,6 +415,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/33537893/"
     },
     {
+      "id": "32852612",
+      "title": "The Story of the Silent Killer : A History of Hypertension: Its Discovery, Diagnosis, Treatment, and Debates.",
+      "authors": "Kalehoff JP, Oparil S",
+      "source": "Curr Hypertens Rep",
+      "pubdate": "2020 Aug 27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32852612/"
+    },
+    {
       "id": "31449462",
       "title": "Alternating QRS Morphologies and PR Intervals in a Desperately Ill Woman.",
       "authors": "Smith BG, Kalehoff J, Kay GN",
@@ -431,14 +455,6 @@
       "source": "JAMA",
       "pubdate": "2025 Nov 11",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41051784/"
-    },
-    {
-      "id": "39841527",
-      "title": "Decay in Physiologic Knowledge since Medical School among Critical Care Fellows (DIP Study).",
-      "authors": "Maximous SI, Acho M, Ahari J, Hawkins K, Jamieson DB, Luks AM, Poston J, Seam N, Shah NG, Sun J, Woods CJ, Lee BW",
-      "source": "ATS Sch",
-      "pubdate": "2025 Jun",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39841527/"
     },
     {
       "id": "39379159",
@@ -507,6 +523,14 @@
       "source": "ATS Sch",
       "pubdate": "2025 Dec",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41467689/"
+    },
+    {
+      "id": "40578913",
+      "title": "Maintenance of an Asthma Intervention Post-Trial: Use of a Patient-Activated Reliever-Triggered Inhaled Corticosteroid (PARTICS) Strategy in Black and Latinx Patients.",
+      "authors": "Cardet JC, Bailey JM, Hurley LP, Maher NE, Staton EW, Yawn BP, Zaeh SE, Israel E, other PREPARE investigators;, Apter AJ, Bradford P, Calderon-Candelario RA, Carroll JK, Chupp GL, Cohen R, Ericson B, Fuhlbrigge AL, Kaplan BM, Kruse JM, Nazario S, Pace WD, Pasarica M, Phipatanakul W, Riley IL, Rodriguez-Louis J, Shenoy K, Stranges PM, Tapp H, Wechsler ME",
+      "source": "J Am Board Fam Med",
+      "pubdate": "2025 Mar-Apr",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40578913/"
     },
     {
       "id": "38897404",

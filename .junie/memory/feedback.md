@@ -22,3 +22,11 @@
     "NEW INSTRUCTION": "WHEN asked to add/update site last updated date THEN set a frontmatter date variable"
 }
 
+[2026-04-07 10:49] - Updated by Junie
+{
+    "TYPE": "preference",
+    "CATEGORY": "Workflow orchestration",
+    "EXPECTATION": "Invoke fetch-pubmed and update-publications from publications.md frontmatter instead of pre-Astro scripts.",
+    "NEW INSTRUCTION": "WHEN orchestrating PubMed updates THEN trigger fetch and update from publications.md frontmatter"
+}
+

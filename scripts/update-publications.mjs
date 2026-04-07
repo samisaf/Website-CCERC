@@ -14,18 +14,13 @@
  */
 
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
-import deduplicate from './remove-duplicates.mjs';
+import removeDuplicates from './remove-duplicates.mjs';
 
 // File Path Configurations
 const PUBMED_RESULTS_FILE = 'public/pubmed-results.json';
 const EXCLUDED_RESULTS_FILE = 'public/excluded-results.json';
 const PUBLICATIONS_FILE = 'content/publications.md';
-
-// remove duplicates before processing
-deduplicate(EXCLUDED_RESULTS_FILE);
-deduplicate(PUBMED_RESULTS_FILE);
 
 /**
  * Formats a single publication object into a Markdown list item.
@@ -42,30 +37,40 @@ function formatPublication(pub) {
   // PubMed authors are usually like "Safadi S, Amirahmadi R"
   // The goal is to format it similar to the existing style:
   // "Safadi, S., Acho, M., ... \"Title.\" Source (Date): Details."
-  
+
   return `- ${pub.authors}. "${pub.title}" ${pub.source} (${pub.pubdate}). ${pub.url}`;
 }
 
 /**
  * The main function that orchestrates the publication update process.
+ * This function reads the PubMed results, applies exclusions, deduplicates entries, sorts them, and updates the publications page.
+ * 
+ * @param {string} pubmedResultsFile - Path to the JSON file containing raw PubMed search results.
+ * @param {string} excludedResultsFile - Path to the JSON file containing publications to exclude.
+ * @param {string} publicationsFile - Path to the Markdown file to update with the new publication list.
+ * @returns {Promise<void>} A promise that resolves when the update process is complete.
  */
-async function updatePublications() {
+async function updatePublications(pubmedResultsFile = PUBMED_RESULTS_FILE, excludedResultsFile = EXCLUDED_RESULTS_FILE, publicationsFile = PUBLICATIONS_FILE) {
+  // 0. Remove duplicates before processing
+  removeDuplicates(excludedResultsFile);
+  removeDuplicates(pubmedResultsFile);
+
   // 1. Ensure the source data file exists
-  if (!fs.existsSync(PUBMED_RESULTS_FILE)) {
-    console.error(`Error: ${PUBMED_RESULTS_FILE} not found. Run 'npm run fetch-pubmed' first.`);
+  if (!fs.existsSync(pubmedResultsFile)) {
+    console.error(`Error: ${pubmedResultsFile} not found. Run 'npm run fetch-pubmed' first.`);
     process.exit(1);
   }
 
   // 2. Parse the PubMed search results
-  const rawData = fs.readFileSync(PUBMED_RESULTS_FILE, 'utf8');
+  const rawData = fs.readFileSync(pubmedResultsFile, 'utf8');
   const results = JSON.parse(rawData);
 
   // 3. Load the exclusion list (optional)
   // This file contains a list of publication objects that should never appear on the site.
   let excludedIds = new Set();
-  if (fs.existsSync(EXCLUDED_RESULTS_FILE)) {
+  if (fs.existsSync(excludedResultsFile)) {
     try {
-      const excludedRawData = fs.readFileSync(EXCLUDED_RESULTS_FILE, 'utf8');
+      const excludedRawData = fs.readFileSync(excludedResultsFile, 'utf8');
       const excludedResults = JSON.parse(excludedRawData);
       // Assuming excludedResults is an array of objects with an 'id' property
       excludedResults.forEach(pub => {
@@ -74,7 +79,7 @@ async function updatePublications() {
         }
       });
     } catch (e) {
-      console.warn(`Warning: Could not parse ${EXCLUDED_RESULTS_FILE}. Proceeding without exclusions.`);
+      console.warn(`Warning: Could not parse ${excludedResultsFile}. Proceeding without exclusions.`);
     }
   }
 
@@ -106,8 +111,8 @@ async function updatePublications() {
 
   // 7. Read the existing publications page to preserve its frontmatter
   if (!fs.existsSync(PUBLICATIONS_FILE)) {
-      console.error(`Error: ${PUBLICATIONS_FILE} not found.`);
-      process.exit(1);
+    console.error(`Error: ${PUBLICATIONS_FILE} not found.`);
+    process.exit(1);
   }
 
   const fileContent = fs.readFileSync(PUBLICATIONS_FILE, 'utf8');

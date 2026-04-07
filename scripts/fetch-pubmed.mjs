@@ -8,14 +8,12 @@
  * 3. Queries the NCBI PubMed ESummary API to fetch details (title, authors, source, date) for each ID.
  * 4. Saves the aggregated results into a JSON file for processing by the publication update script.
  * 
- * NOTE: The script includes artificial delays to respect NCBI's rate limit 
- * (3 requests per second without an API key).
+ * NOTE: The script includes artificial delays to respect NCBI's rate limit (3 requests per second without an API key).
  * 
  * Usage: npm run fetch-pubmed
  */
 
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
 import { globby } from 'globby';
 
@@ -29,13 +27,14 @@ const RETMAX = 5;
  * Searches PubMed for the most recent articles by a given author.
  * 
  * @param {string} authorName - The formatted search term (usually "First Last").
+ * @param {number} retmax - The maximum number of publications to retrieve for the author.
  * @returns {Promise<Array<Object>>} A promise that resolves to an array of publication objects.
  */
-async function fetchPubMedForAuthor(authorName) {
+async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
   // PubMed ESearch API to find IDs
   // We limit to 5 results to keep the search focused and reduce API load.
   const term = encodeURIComponent(authorName);
-  const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${term}[Author]&retmode=json&retmax=${RETMAX}`;
+  const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${term}[Author]&retmode=json&retmax=${retmax}`;
   console.log(searchUrl);
 
   try {
@@ -81,10 +80,17 @@ async function fetchPubMedForAuthor(authorName) {
 
 /**
  * Orchestrates the full PubMed extraction process for all members.
+ * 1. Reads member Markdown files to extract author names.
+ * 2. Fetches recent publications for each author from PubMed.
+ * 3. Saves the aggregated results to a JSON file.
+ * 
+ * @param {string} membersDir - The directory containing member Markdown files.
+ * @param {string} outputFile - The path to the output JSON file for results.
+ * @returns {Promise<void>} A promise that resolves when the process is complete.
  */
-async function main() {
+async function main(membersDir = MEMBERS_DIR, outputFile = OUTPUT_FILE) {
   // Find all member files in the content directory
-  const memberFiles = await globby(`${MEMBERS_DIR}/*.md`);
+  const memberFiles = await globby(`${membersDir}/*.md`);
   const allResults = {};
 
   for (const file of memberFiles) {
@@ -108,8 +114,8 @@ async function main() {
   }
 
   // Write the results to a JSON file for consumption by other scripts
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(allResults, null, 2));
-  console.log(`Results successfully saved to ${OUTPUT_FILE}`);
+  fs.writeFileSync(outputFile, JSON.stringify(allResults, null, 2));
+  console.log(`Results successfully saved to ${outputFile}`);
 }
 
 // Global execution entry point
