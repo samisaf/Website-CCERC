@@ -30,7 +30,7 @@ const RETMAX = 5;
  * @param {number} retmax - The maximum number of publications to retrieve for the author.
  * @returns {Promise<Array<Object>>} A promise that resolves to an array of publication objects.
  */
-async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
+export async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
   // PubMed ESearch API to find IDs
   // We limit to 5 results to keep the search focused and reduce API load.
   const term = encodeURIComponent(authorName);
@@ -88,7 +88,7 @@ async function fetchPubMedForAuthor(authorName, retmax = RETMAX) {
  * @param {string} outputFile - The path to the output JSON file for results.
  * @returns {Promise<void>} A promise that resolves when the process is complete.
  */
-async function main(membersDir = MEMBERS_DIR, outputFile = OUTPUT_FILE) {
+export async function main(membersDir = MEMBERS_DIR, outputFile = OUTPUT_FILE) {
   // Find all member files in the content directory
   const memberFiles = await globby(`${membersDir}/*.md`);
   const allResults = {};
@@ -118,8 +118,10 @@ async function main(membersDir = MEMBERS_DIR, outputFile = OUTPUT_FILE) {
   console.log(`Results successfully saved to ${outputFile}`);
 }
 
-// Global execution entry point
-main().catch(err => {
-  console.error('Fatal error during PubMed fetch:', err);
-  process.exit(1);
-});
+// Global execution entry point (only when run directly)
+if (process.argv[1] === import.meta.url) {
+  main().catch(err => {
+    console.error('Fatal error during PubMed fetch:', err);
+    process.exit(1);
+  });
+}

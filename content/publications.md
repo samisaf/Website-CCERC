@@ -4,6 +4,8 @@ title: publications
 description: relevant publications
 date: '2026-04-07'
 url: some_url
+fetchPubmed: true
+updatePublications: true
 ---
 
 - Safadi S, Amirahmadi R, Tlimat A, Rovinski R, Sun J, Lee BW, Seam N, Critical Care Education Research Consortium. "Quality of Human Expert vs Large Language Model-Generated Multiple-Choice Questions in the Field of Mechanical Ventilation." Chest (2025 Dec). https://pubmed.ncbi.nlm.nih.gov/40684906/
@@ -14,22 +16,26 @@ url: some_url
 
 - Hu AW, Beckman TJ, LeMahieu AM, Keetley HM, Adamson R, Patel HH, Krutsinger DC, Denson JL, Dhannoon S, Chu DC, Kelm DJ. "Grit and resilience among pulmonary and critical care physicians: A multi-institutional study." Am J Med Sci (2025 Nov). https://pubmed.ncbi.nlm.nih.gov/40675368/
 
+- Rangecroft A, Vicencio A, Kotwal N, Dante S, Sachdeva A, Holden V. "Pediatric Bronchoscopy for the Adult Interventional Pulmonologist." Diagnostics (Basel) (2025 Oct 31). https://pubmed.ncbi.nlm.nih.gov/41226061/
+
+- Seam N, Green J, Price DW. "Strengthening Continuing Professional Development through Active Collaboration." ATS Sch (2025 Dec). https://pubmed.ncbi.nlm.nih.gov/40679874/
+
 - Seam N, Burkart KM, Kritek PA. "Reflections from the First 5 Years of ATS Scholar." ATS Sch (2025 Jun). https://pubmed.ncbi.nlm.nih.gov/40586527/
 
-- Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium. "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation." Respir Care (2024 Oct 25). https://pubmed.ncbi.nlm.nih.gov/39379159/
-
 - Keller M, Acho M, Sun J, Kriner E, Seam N, Lee BW. "Impact of Longitudinal Mechanical Ventilation Curriculum on Decay of Knowledge." ATS Sch (2024 Jun 1). https://pubmed.ncbi.nlm.nih.gov/39479530/
+
+- Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium. "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation." Respir Care (2024 Oct 25). https://pubmed.ncbi.nlm.nih.gov/39379159/
 
 - Bateman ME, Maximous SI, Nelson DR, Lee MM, Drake MG, Short B, Quaney R, Soffler M, Matta M. "Impact of ATS Resident Boot Camp on Faculty and Fellows who Teach." ATS Sch (2024 Jun 1). https://pubmed.ncbi.nlm.nih.gov/38957496/
 
 - Halestrap P, Aliba D, Otieno G, Brotherton BJ, Gitura HW, Matson JE, Lee BW, Mbugua E. "Development and delivery of a higher diploma in emergency medicine and critical care for clinical officers in Kenya." Afr J Emerg Med (2023 Dec). https://pubmed.ncbi.nlm.nih.gov/37701728/
 
-- Jain V, Oweis E, Woods CJ. "Mapping the Distance: From Competence to Capability." ATS Sch (2023 Dec). https://pubmed.ncbi.nlm.nih.gov/38196680/
-
 - Krutsinger DC, Adamson R, Olson EM, Denson JL, Kelm DJ, Chu DC, Stewart NH. "Financial Education in U.S. Pulmonary and Critical Care Medicine Fellowship Programs." ATS Sch (2023 Sep). https://pubmed.ncbi.nlm.nih.gov/37795115/
 
-- Seam N, Kriner E, Woods CJ, Shah NG, Acho M, McCurdy MT, Mikita J, Ahari J, Sun J, Bell T, Lee BW. "Impact of Novel Multiinstitutional Curriculum on Critical Care Fellow Ventilator Knowledge." ATS Sch (2020 Dec 22). https://pubmed.ncbi.nlm.nih.gov/33870325/
+- Gautam S, Chu JH, Cohen AJ, Kaur R, Lee S, Wilson G, Liu Q, Gomez J, Rajaveen H, Yan X, Cohn L, Clark BJ, Chupp GL. "Sputum alarmins delineate distinct T2 cytokine pathways and unique subtypes of patients with asthma." Allergy (2023 Dec). https://pubmed.ncbi.nlm.nih.gov/37874609/
 
-- Kalehoff JP, Oparil S. "The Story of the Silent Killer : A History of Hypertension: Its Discovery, Diagnosis, Treatment, and Debates." Curr Hypertens Rep (2020 Aug 27). https://pubmed.ncbi.nlm.nih.gov/32852612/
+- Hochendoner SJ, Guck DG, Villarreal Fernandez E, Chu DC. "End-of-Life Care in the ICU." Am J Respir Crit Care Med (2021 Mar 15). https://pubmed.ncbi.nlm.nih.gov/33497587/
+
+- Seam N, Kriner E, Woods CJ, Shah NG, Acho M, McCurdy MT, Mikita J, Ahari J, Sun J, Bell T, Lee BW. "Impact of Novel Multiinstitutional Curriculum on Critical Care Fellow Ventilator Knowledge." ATS Sch (2020 Dec 22). https://pubmed.ncbi.nlm.nih.gov/33870325/
 
 - Keller JM, Claar D, Ferreira JC, Chu DC, Hossain T, Carlos WG, Gold JA, Nonas SA, Seam N. "Mechanical Ventilation Training During Graduate Medical Education: Perspectives and Review of the Literature." J Grad Med Educ (2019 Aug). https://pubmed.ncbi.nlm.nih.gov/31440332/

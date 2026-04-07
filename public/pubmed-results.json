@@ -17,14 +17,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/40178919/"
     },
     {
-      "id": "39379159",
-      "title": "Comparison of Web-Based and On-Site Lung Simulators for Education in Mechanical Ventilation.",
-      "authors": "Safadi S, Acho M, Maximous SI, Keller MB, Kriner E, Woods CJ, Sun J, Staitieh BS, Lee BW, Seam N, Critical Care Education Research Consortium",
-      "source": "Respir Care",
-      "pubdate": "2024 Oct 25",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39379159/"
-    },
-    {
       "id": "38837000",
       "title": "The role of biomarkers in early identification of acute kidney injury among non-critically ill patients.",
       "authors": "Safadi S, Hommos MS, Thongprayoon C, Giesen CD, Bernaba M, Kashani KB, Lieske JC",
@@ -101,14 +93,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/39379159/"
     },
     {
-      "id": "38196680",
-      "title": "Mapping the Distance: From Competence to Capability.",
-      "authors": "Jain V, Oweis E, Woods CJ",
-      "source": "ATS Sch",
-      "pubdate": "2023 Dec",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38196680/"
-    },
-    {
       "id": "33870325",
       "title": "Impact of Novel Multiinstitutional Curriculum on Critical Care Fellow Ventilator Knowledge.",
       "authors": "Seam N, Kriner E, Woods CJ, Shah NG, Acho M, McCurdy MT, Mikita J, Ahari J, Sun J, Bell T, Lee BW",
@@ -175,6 +159,14 @@
       "source": "ATS Sch",
       "pubdate": "2023 Sep",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37795115/"
+    },
+    {
+      "id": "33497587",
+      "title": "End-of-Life Care in the ICU.",
+      "authors": "Hochendoner SJ, Guck DG, Villarreal Fernandez E, Chu DC",
+      "source": "Am J Respir Crit Care Med",
+      "pubdate": "2021 Mar 15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33497587/"
     },
     {
       "id": "32471003",
@@ -245,6 +237,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/41370752/"
     },
     {
+      "id": "41226061",
+      "title": "Pediatric Bronchoscopy for the Adult Interventional Pulmonologist.",
+      "authors": "Rangecroft A, Vicencio A, Kotwal N, Dante S, Sachdeva A, Holden V",
+      "source": "Diagnostics (Basel)",
+      "pubdate": "2025 Oct 31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41226061/"
+    },
+    {
       "id": "41159542",
       "title": "Red Blood Cell-Derived Exosomal miR-93-5p Promotes Lung Cancer Progression through PTEN Suppression.",
       "authors": "Li N, Dhilipkannah P, Holden VK, Sachdeva A, Jiang F",
@@ -313,6 +313,14 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/40684906/"
     },
     {
+      "id": "40679874",
+      "title": "Strengthening Continuing Professional Development through Active Collaboration.",
+      "authors": "Seam N, Green J, Price DW",
+      "source": "ATS Sch",
+      "pubdate": "2025 Dec",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40679874/"
+    },
+    {
       "id": "40586527",
       "title": "Reflections from the First 5 Years of ATS Scholar.",
       "authors": "Seam N, Burkart KM, Kritek PA",
@@ -345,6 +353,14 @@
       "source": "Ther Adv Gastroenterol",
       "pubdate": "2025",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40321366/"
+    },
+    {
+      "id": "37874609",
+      "title": "Sputum alarmins delineate distinct T2 cytokine pathways and unique subtypes of patients with asthma.",
+      "authors": "Gautam S, Chu JH, Cohen AJ, Kaur R, Lee S, Wilson G, Liu Q, Gomez J, Rajaveen H, Yan X, Cohn L, Clark BJ, Chupp GL",
+      "source": "Allergy",
+      "pubdate": "2023 Dec",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37874609/"
     },
     {
       "id": "37454926",
@@ -415,14 +431,6 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/33537893/"
     },
     {
-      "id": "32852612",
-      "title": "The Story of the Silent Killer : A History of Hypertension: Its Discovery, Diagnosis, Treatment, and Debates.",
-      "authors": "Kalehoff JP, Oparil S",
-      "source": "Curr Hypertens Rep",
-      "pubdate": "2020 Aug 27",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/32852612/"
-    },
-    {
       "id": "31449462",
       "title": "Alternating QRS Morphologies and PR Intervals in a Desperately Ill Woman.",
       "authors": "Smith BG, Kalehoff J, Kay GN",
@@ -489,6 +497,14 @@
       "source": "Respir Care",
       "pubdate": "2025 May",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40178919/"
+    },
+    {
+      "id": "32974635",
+      "title": "Assessing Different Approaches to Leveraging Historical Smoking Exposure Data to Better Select Lung Cancer Screening Candidates: A Retrospective Validation Study.",
+      "authors": "Kats DJ, Adie Y, Tlimat A, Greco PJ, Kaelber DC, Tarabichi Y",
+      "source": "Nicotine Tob Res",
+      "pubdate": "2021 Aug 4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32974635/"
     },
     {
       "id": "31862438",
@@ -565,6 +581,14 @@
       "source": "BMC Health Serv Res",
       "pubdate": "2026 Feb 21",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41723492/"
+    },
+    {
+      "id": "41644135",
+      "title": "Understanding risk of poor outcomes in adults hospitalised with respiratory syncytial virus infection: evidence from a multicentre UK cohort.",
+      "authors": "Morelli T, Purcell M, Panaguiton J, Patel R, Weinberg S, Hulston G, Siy-Yap H, Davies EA, Keating A, Saidy I, Freeman A, Staples KJ, Rodrigues P, Jones A, Allen A, Bansal AT, Marciniak SJ, Greening NJ, Crooks MG, Mitchelmore P, Siddiqui SH, Myerson J, Pavitt MJ, Daneshvar C, Chalmers JD, Lee PH, Lewis T, Clark TW, Denny S, Wiseman DJ, Ellis H, Wilkinson TM, UNIVERSAL Study Group, Universal Study Group",
+      "source": "Thorax",
+      "pubdate": "2026 Feb 5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41644135/"
     },
     {
       "id": "41272113",

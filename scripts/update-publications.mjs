@@ -50,7 +50,7 @@ function formatPublication(pub) {
  * @param {string} publicationsFile - Path to the Markdown file to update with the new publication list.
  * @returns {Promise<void>} A promise that resolves when the update process is complete.
  */
-async function updatePublications(pubmedResultsFile = PUBMED_RESULTS_FILE, excludedResultsFile = EXCLUDED_RESULTS_FILE, publicationsFile = PUBLICATIONS_FILE) {
+export async function updatePublications(pubmedResultsFile = PUBMED_RESULTS_FILE, excludedResultsFile = EXCLUDED_RESULTS_FILE, publicationsFile = PUBLICATIONS_FILE) {
   // 0. Remove duplicates before processing
   removeDuplicates(excludedResultsFile);
   removeDuplicates(pubmedResultsFile);
@@ -131,8 +131,10 @@ async function updatePublications(pubmedResultsFile = PUBMED_RESULTS_FILE, exclu
   console.log(`Successfully updated ${PUBLICATIONS_FILE} with ${pubList.length} publications and set date to ${today}.`);
 }
 
-// Global execution
-updatePublications().catch(err => {
-  console.error('An unexpected error occurred during execution:', err);
-  process.exit(1);
-});
+// Global execution (only when run directly)
+if (process.argv[1] === import.meta.url) {
+  updatePublications().catch(err => {
+    console.error('An unexpected error occurred during execution:', err);
+    process.exit(1);
+  });
+}
